@@ -19,6 +19,7 @@ public class ChangeOnFlip : MonoBehaviour
     if (active) {
       onFlipEvent.Invoke();
       canKill = true;
+
     }
   }
 
