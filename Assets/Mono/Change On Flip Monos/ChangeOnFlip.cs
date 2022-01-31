@@ -13,7 +13,6 @@ public class ChangeOnFlip : MonoBehaviour
 
   private void Start() {
     platform = GetComponent<SpriteRenderer>();
-
   }
 
   public void flip() {

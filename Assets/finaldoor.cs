@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class door : MonoBehaviour
+public class finaldoor : MonoBehaviour
 {
     public bool isOpen = false;
     public UnityEvent openDoor;
@@ -15,7 +15,7 @@ public class door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (isOpen) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+            Application.Quit();
         }
     }
 }
